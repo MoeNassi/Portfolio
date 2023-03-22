@@ -1,0 +1,228 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: cooc;
+	src: url(coco.ttf);
+}
+body{
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	background: linear-gradient(rgb(34, 34, 87), rgb(33, 100, 105));
+}
+.heading{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	height: 8vh;
+	top: 0;
+	right: 0;
+}
+.heading div{
+	padding: 30px 50px;
+	text-transform: capitalize;
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	cursor: pointer;
+	transition: .2s ease;
+	color: white;
+}
+.heading div:hover{
+	transform: scale(1.2);
+}
+.middle{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	right: 0;
+}
+.middle div, a{
+	font-size: 50px;
+	position: relative;;
+	font-weight: normal;
+	color:gold; 
+	left: 10%;
+	animation: render 1.2s;
+}
+.sec{
+	cursor: pointer;
+	letter-spacing: 10px;
+	font-family: cooc;
+	text-decoration: none;
+	transition: .3s;
+}
+.sec:hover{
+	text-shadow: 0 0 10px white;
+}
+.middle .pres{
+	padding-bottom: 30px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 30px;
+}
+.middle p{
+	font-size: 20px;
+	color: white;
+	position: relative;
+	left: 10%;
+	line-height: 1.7;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	animation: rende1r 2s;
+}
+.secpage{
+	z-index: 1;
+	display: flex;
+	padding: 10%;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 94%;
+	height: 92vh;
+	animation: secreder 1.8s;
+}
+.secpage a{
+	background-color: transparent;
+    cursor: pointer;
+    height: 20px;
+    width: 32px;
+    height: 32px;
+    transition: .3s;
+    color: white;
+    font-size: 32px;
+	margin-bottom: 35px;
+	text-decoration: none;
+	transition: .3s;
+}
+.secpage a:active{
+	scale: 0.7;
+}
+.secpage .icon-instagram {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	border-radius: 10px;
+}
+.secpage .icon-twitter {
+	color: rgb(19, 138, 201);
+}
+.secpage .icon-github  {
+	color: rgb(147, 147, 147);
+}
+.container{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 92vh;
+}
+@keyframes render{
+	0%{
+		transform: translate(-100%);
+	}
+	100%{
+		transform: translate(0%);
+	}
+}
+@keyframes rende1r{
+	0%{
+		left: -100%;
+	}
+	100%{
+		left: 10%;
+	}
+}
+@keyframes secreder {
+	from{
+		transform: translateX(100%);
+	}
+	to{
+		transform: translateX(0%);
+	}
+}
+.astronaut{
+	position: absolute;
+	animation: t7arek 3s;
+	width: 100%;
+	height: 100vh;
+}
+@keyframes t7arek {
+	0%{
+		transform: translateX(100%);
+	}
+	25%{
+		transform: translateX(20%);
+	}
+	50%{
+		transform: translateX(-100%) ;
+	}
+	60%{
+		transform: translateY(200%);
+	}
+	75%{
+		transform: translateX(100%);
+	}
+	90%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateX(0%);
+	}
+}
+.yoyo{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(189, 189, 189);
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	z-index: -1;
+	top: -100%;
+	animation: hbet 7s infinite;
+}
+.yoyo::before{
+	content: "";
+	background-color: rgb(34, 34, 87);
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+.yoyo span{
+	position: absolute;
+	height: 1000px;
+	width: 3px;
+	background-color: rgb(189, 189, 189);
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 190px;
+	z-index: -2;
+}
+@keyframes hbet{
+	0%, 100%{
+		top: -100%;
+	}
+	10%, 80%{
+		top: 50%;
+	}
+}
+@keyframes dor {
+	0%{
+		rotate: 0;
+	}
+	100%{
+		rotate: 360deg;
+	}
+}
+.yoyoimg{
+	transform-origin: 0 0; 
+	width: 150px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	animation: dor .3s infinite linear;
+}
