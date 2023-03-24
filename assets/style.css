@@ -348,4 +348,5 @@ input::placeholder{
 	margin-bottom: 0;
     font-size: 20px;
     padding: 10px;
+	letter-spacing: 10px;
 }
