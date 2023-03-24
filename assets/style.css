@@ -308,3 +308,44 @@ input::placeholder{
 	margin-top: 20px;
 	margin-bottom: 0;
 }
+.about-page{
+	width: 100%;
+	height: 100vh;
+	margin-right: 0;
+}
+.back{
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	align-items: center;
+}
+.mypic{
+	width: 15%;
+	border: 1px solid;
+	border-radius: 50%;
+	transition: .4s;
+}
+.mypic:hover{
+	transform: scale(1.1);
+}
+.simple-bio{
+	font-size: 40px;
+	max-width: 30%;
+	margin-bottom: 0;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+}
+.start{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.phonenumber{
+	width: 40px;
+}
+.numero{
+	margin-bottom: 0;
+    font-size: 20px;
+    padding: 10px;
+}
