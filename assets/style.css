@@ -1,38 +1,39 @@
-* {
+*{
 	padding: 0;
 	margin: 0;
+	scroll-behavior: smooth;
 	box-sizing: border-box;
 }
-
 @font-face {
 	font-family: cooc;
 	src: url(coco.ttf);
 }
 body{
 	overflow-x: hidden;
-	scroll-behavior: smooth;
 	background: linear-gradient(rgb(34, 34, 87), rgb(33, 100, 105));
+	font-family: Arial, Helvetica, sans-serif;
 }
 .heading{
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	align-items: center;
 	height: 8vh;
-	top: 0;
-	right: 0;
+	position: fixed;
+	z-index: 5;
 }
-.heading div{
-	padding: 30px 50px;
+.heading a{
+	padding: 30px 70px;
 	text-transform: capitalize;
 	font-size: 20px;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	cursor: pointer;
 	transition: .2s ease;
+	text-decoration: none;
 	color: white;
 }
-.heading div:hover{
-	transform: scale(1.2);
+.heading a:hover{
+	transform: scale(1.1);
+	text-shadow: 0 0 5px gold;
 }
 .middle{
 	display: flex;
@@ -40,7 +41,7 @@ body{
 	flex-direction: column;
 	right: 0;
 }
-.middle div, a{
+.middle a{
 	font-size: 50px;
 	position: relative;;
 	font-weight: normal;
@@ -58,16 +59,12 @@ body{
 .sec:hover{
 	text-shadow: 0 0 10px white;
 }
-.middle .pres{
-	padding-bottom: 30px;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 30px;
-}
 .middle p{
 	font-size: 20px;
 	color: white;
 	position: relative;
 	left: 10%;
+	max-width: 80%;
 	line-height: 1.7;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	animation: rende1r 2s;
@@ -149,7 +146,9 @@ body{
 	border-radius: 50%;
 	z-index: -1;
 	top: -100%;
-	animation: hbet 7s infinite;
+	transform-origin: 100 100;
+	animation: hbet 5s infinite alternate;
+	animation-delay: 2s;
 }
 .yoyo::before{
 	content: "";
@@ -175,9 +174,19 @@ body{
 @keyframes hbet{
 	0%, 100%{
 		top: -100%;
+		rotate: 0;
 	}
-	10%, 80%{
+	10% {
+		top: 55%;
+	}
+	12% {
 		top: 50%;
+	}
+	12%, 80%{
+		top: 50%;
+	}
+	82% {
+		top: 55%;
 	}
 }
 @keyframes dor {
@@ -189,7 +198,7 @@ body{
 	}
 }
 .yoyoimg{
-	transform-origin: 0 0; 
+	transform-origin: 0 0;
 	width: 150px;
 	position: absolute;
 	left: 50%;
@@ -199,4 +208,78 @@ body{
 }
 .secpage a:hover{
 	transform: scale(1.1);
+}
+.pudge{
+	background: linear-gradient(rgb(33, 100, 105), rgb(34, 60));
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	align-items: center;
+}
+@media{
+	.middle p{
+		max-width: 60%;
+	}
+}
+.centre{
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.centre input{
+	padding: 20px 10% 20px 40px;
+	border-radius: 20px;
+	border: 2px solid white;
+	outline: none;
+	margin: 20px;
+	backdrop-filter: blur(15px);
+	background-color: transparent;
+	backdrop-filter: blur(15px);
+	color: white;
+	font-size: 20px;
+	min-width: 100%;
+}
+.centre .last{
+	padding: 20px 10% 20px 40px;
+	margin: 20px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 20px;
+	padding-bottom: 20%;
+	color: white;
+	overflow: hidden;
+	font-size: 20px;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 300px;
+	max-height: 300px;
+}
+input::placeholder{
+	color: rgba(255, 255, 255, 0.694);
+	font-family: 'Courier New', Courier, monospace;
+}
+.last::placeholder{
+	color: rgba(255, 255, 255, 0.694);
+	font-family: 'Courier New', Courier, monospace;
+}
+.par, .adress{
+	color: white;
+	font-size: 25px;
+	margin-top: 20px;
+}
+.picture img{
+	width: 300px;
+}
+.picture{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
