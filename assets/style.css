@@ -170,6 +170,7 @@ body{
 	transform: translateX(-50%);
 	bottom: 190px;
 	z-index: -2;
+
 }
 @keyframes hbet{
 	0%, 100%{
@@ -256,10 +257,9 @@ body{
 	color: white;
 	overflow: hidden;
 	font-size: 20px;
-	min-width: 100%;
-	max-width: 100%;
-	min-height: 300px;
-	max-height: 300px;
+	width: 100%;
+	height: 300px;
+	resize: none;
 }
 input::placeholder{
 	color: rgba(255, 255, 255, 0.694);
@@ -272,14 +272,39 @@ input::placeholder{
 .par, .adress{
 	color: white;
 	font-size: 25px;
-	margin-top: 20px;
 }
-.picture img{
+.page2-content img{
 	width: 300px;
 }
-.picture{
+.page2-content{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+.writing{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.writing img{
+	width: 30px;
+}
+.writing img, p{
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+.location{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.location .pos-loc{
+	width: 25px;
+}
+.location p, .pos-loc{
+	margin-top: 20px;
+	margin-bottom: 0;
 }
