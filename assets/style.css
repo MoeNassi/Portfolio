@@ -332,7 +332,11 @@ input::placeholder{
 }
 .simple-bio{
 	font-size: 30px;
+<<<<<<< HEAD
 	max-width: 20%;
+=======
+	max-width: 30%;
+>>>>>>> d8bb97be3c262438f59ea5d9577449cf270e888f
 	margin-bottom: 0;
 	font-family: Arial, Helvetica, sans-serif;
 	color:white;
@@ -343,6 +347,10 @@ input::placeholder{
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
+<<<<<<< HEAD
+=======
+	height: 50vh;
+>>>>>>> d8bb97be3c262438f59ea5d9577449cf270e888f
 }
 .phonenumber{
 	width: 40px;
@@ -354,6 +362,7 @@ input::placeholder{
     padding: 10px;
 	letter-spacing: 5px;
 }
+<<<<<<< HEAD
 .hawahed{
 	position: absolute;
 	z-index: -4;
@@ -377,3 +386,5 @@ input::placeholder{
 	background-color: white;
 	color: gold;
 }
+=======
+>>>>>>> d8bb97be3c262438f59ea5d9577449cf270e888f
