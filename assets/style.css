@@ -314,8 +314,9 @@ input::placeholder{
 	margin-right: 0;
 }
 .back{
-	height: 50vh;
+	height: 100vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	gap: 20px;
 	align-items: center;
@@ -330,22 +331,49 @@ input::placeholder{
 	transform: scale(1.1);
 }
 .simple-bio{
-	font-size: 40px;
-	max-width: 30%;
+	font-size: 30px;
+	max-width: 20%;
 	margin-bottom: 0;
-	font-family: 'Courier New', Courier, monospace;
-	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:white;
+	text-shadow: 0 0 10px black;
+	text-align: center;
 }
 .start{
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 }
 .phonenumber{
 	width: 40px;
+	margin-bottom: 10px;
 }
 .numero{
-	margin-bottom: 0;
+	margin-bottom: 10px;
     font-size: 20px;
     padding: 10px;
+	letter-spacing: 5px;
+}
+.hawahed{
+	position: absolute;
+	z-index: -4;
+}
+.sub{
+	padding: 10px 30px;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: gold;
+	border: 2px solid rgb(114, 94, 40);
+	transition: .6s;
+	text-decoration: none;
+	cursor: pointer;
+}
+.sub:active{
+	scale: 0.8;
+	background-color: white;
+	color: gold;
 }
