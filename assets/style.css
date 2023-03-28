@@ -10,7 +10,7 @@
 }
 body{
 	overflow-x: hidden;
-	background: linear-gradient(rgb(34, 34, 87), rgb(33, 100, 105));
+	background: linear-gradient(180deg, rgb(34, 34, 87), rgb(33, 100, 105));
 	font-family: Arial, Helvetica, sans-serif;
 }
 .heading{
