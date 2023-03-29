@@ -323,7 +323,6 @@ input::placeholder{
 }
 .mypic{
 	width: 15%;
-	border: 1px solid;
 	border-radius: 50%;
 	transition: .4s;
 }
@@ -355,10 +354,6 @@ input::placeholder{
     padding: 10px;
 	letter-spacing: 5px;
 }
-.hawahed{
-	position: absolute;
-	z-index: -4;
-}
 .sub{
 	padding: 10px 30px;
 	border: none;
@@ -377,4 +372,62 @@ input::placeholder{
 	scale: 0.8;
 	background-color: white;
 	color: gold;
+}
+.first-circle{
+	position: absolute;
+	z-index: -2;
+	background: linear-gradient(180deg, rgba(121, 121, 75, 0.538), rgba(121, 79, 79, 0.527));
+	width: 50%;
+	height: 60%;
+	border: 0px solid;
+	/* border-radius: 80% 20% 50% 50% / 43% 94% 6% 57%; */
+	border-radius: 50%;
+}
+.second-circle{
+	position: absolute;
+	z-index: -1;
+	background: linear-gradient(180deg, rgba(108, 75, 121, 0.535), rgba(121, 104, 79, 0.507));
+	width: 40%;
+	height: 50%;
+	border: 0px solid;
+	/* border-radius: 30% 70% 76% 24% / 80% 71% 29% 20% ; */
+	border-radius: 50%;
+}
+.third-circle{
+	position: absolute;
+	z-index: -1;
+	background: linear-gradient(180deg, rgba(89, 75, 121, 0.531), rgba(79, 111, 121, 0.536));
+	width: 30%;
+	height: 40%;
+	border: 0px solid;
+	border-radius: 50%;
+}
+.first-circle{
+	animation: turn 5s ease-in-out infinite;
+}
+.second-circle{
+	animation: turn 5s ease-in-out infinite reverse;
+	animation-delay: 1.5s;
+}
+.third-circle{
+	animation: turn1 5s ease-in-out infinite;
+}
+@keyframes turn{
+	0%{
+		rotate: 0deg;
+	}
+	50%{
+		rotate: 360deg;
+	}
+	100%{
+		rotate: 0deg;
+	}
+}
+@keyframes turn1{
+	0%{
+		rotate: 0deg;
+	}
+	100%{
+		rotate: -360deg;
+	}
 }
