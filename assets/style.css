@@ -10,7 +10,7 @@
 }
 body{
 	overflow-x: hidden;
-	background: linear-gradient(rgb(34, 34, 87), rgb(33, 100, 105));
+	background: linear-gradient(180deg, rgb(34, 34, 87), rgb(33, 100, 105));
 	font-family: Arial, Helvetica, sans-serif;
 }
 .heading{
@@ -377,10 +377,9 @@ input::placeholder{
 	position: absolute;
 	z-index: -2;
 	background: linear-gradient(180deg, rgba(121, 121, 75, 0.538), rgba(121, 79, 79, 0.527));
-	width: 50%;
-	height: 60%;
+	width: 40%;
+	height: 50%;
 	border: 0px solid;
-	/* border-radius: 80% 20% 50% 50% / 43% 94% 6% 57%; */
 	border-radius: 50%;
 }
 .second-circle{
@@ -390,15 +389,14 @@ input::placeholder{
 	width: 40%;
 	height: 50%;
 	border: 0px solid;
-	/* border-radius: 30% 70% 76% 24% / 80% 71% 29% 20% ; */
 	border-radius: 50%;
 }
 .third-circle{
 	position: absolute;
 	z-index: -1;
 	background: linear-gradient(180deg, rgba(89, 75, 121, 0.531), rgba(79, 111, 121, 0.536));
-	width: 30%;
-	height: 40%;
+	width: 40%;
+	height: 50%;
 	border: 0px solid;
 	border-radius: 50%;
 }
